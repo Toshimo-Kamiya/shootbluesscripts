@@ -32,7 +32,7 @@ class ModuleHelperSvc:
         
         for moduleID, module in activeModules.items():
             if (canActivateModule(module) and (not isModuleActive(module))):
-                activateModule(module, pulse=True)
+                activateModule(module)
     
     
 def __load__():
